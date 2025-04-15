@@ -19,6 +19,8 @@ const App = () => {
         draggable
         pauseOnHover
         theme="light" // You can change this to "dark" or "colored" based on your preference
+
+        
       />
     </div>
   );
