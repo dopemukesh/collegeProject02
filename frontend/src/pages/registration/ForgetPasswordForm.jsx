@@ -15,7 +15,7 @@ const ForgetPasswordForm = ({ formData, handleChange, handleSubmit, switchToLogi
                 placeholder="Enter your email"
                 autoComplete="email"
             />
-            <p className="text-sm text-gray-500 mb-4">We'll send you a link to reset your password</p>
+            <p className="text-sm text-neutral-500 mb-4">We'll send you a link to reset your password</p>
 
             <div className="flex justify-between items-center pt-4 gap-2">
                 <p className="text-sm">

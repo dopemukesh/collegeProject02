@@ -19,7 +19,7 @@ export const Button = ({
 }) => {
   const variantClasses = {
     primary:
-      "bg-teal-500 border-2 border-teal-500 hover:bg-gradient-to-bl from-teal-500 to-teal-600/50 text-gray-900",
+      "bg-lime-500 border-2 border-lime-500 hover:bg-gradient-to-bl from-lime-500 to-lime-600/50 text-gray-900",
     secondary:
       "border-2 border-gray-800 dark:border-white bg-gray-900 dark:bg-white hover:bg-gray-800 dark:hover:bg-gray-200 text-white dark:text-gray-900",
     outline:
@@ -76,7 +76,7 @@ export const Button01 = ({
   to, // 👈 Added "to" prop
 }) => {
   const variantClass =
-    "bg-teal-500 border-2 border-teal-500 hover:bg-gradient-to-bl from-teal-500 to-teal-600/50 text-gray-900";
+    "bg-lime-500 border-2 border-lime-500 hover:bg-gradient-to-bl from-lime-500 to-lime-600/50 text-gray-900";
 
   const sizeClasses = {
     sm: "h-10 px-4 py-2 text-sm gap-2",
@@ -85,13 +85,9 @@ export const Button01 = ({
     xl: "h-14 px-7 py-3.5 text-xl gap-3",
   };
 
-  const commonClasses = `shadow-xl shadow-teal-500/50 hover:shadow-xl hover:shadow-teal-500/80 flex items-center justify-center rounded-${
-    rounded || "lg"
-  } whitespace-nowrap active:scale-95 transition-all duration-500 font-medium ${
-    sizeClasses[size] || sizeClasses.md
-  } ${variantClass} ${
-    disabled ? "opacity-50 cursor-not-allowed" : ""
-  } ${className}`;
+  const commonClasses = `shadow-xl rounded-${rounded || "lg"} shadow-lime-500/50 hover:shadow-xl hover:shadow-lime-500/80 flex items-center justify-center  whitespace-nowrap active:scale-95 transition-all duration-500 font-medium ${sizeClasses[size] || sizeClasses.md
+    } ${variantClass} ${disabled ? "opacity-50 cursor-not-allowed" : ""
+    } ${className}`;
 
   // ✅ Agar "to" prop hai, toh <Link> use karega
   const ButtonElement = to ? (
@@ -110,8 +106,9 @@ export const Button01 = ({
   );
 
   return (
-    <div className="p-2 rounded-3xl w-fit border border-teal-500/30 dark:border-teal-500/10 transition-all duration-200 ease-in-out">
-      <div className="p-2 rounded-2xl border border-teal-500/30 transition-all duration-100 ease-in">
+    <div className={`p-1 rounded-${rounded || "2xl"} w-fit border border-lime-500/30 dark:border-lime-500/10 transition-all duration-200 ease-in-out`
+}>
+      <div className={`p-1 rounded-${rounded || "xl"} border border-lime-500/30 transition-all duration-100 ease-in`}>
         {ButtonElement}
       </div>
     </div>

@@ -50,7 +50,7 @@ const Registration = () => {
     };
 
     return (
-        <Container>
+        <Container className='bg-neutral-50 text-neutral-800'>
             <div className="h-screen flex items-center justify-center px-4">
                 <div className="overflow-hidden border border-purple-200 rounded-2xl shadow-xl max-w-md w-full">
                     {/* Header */}
@@ -60,7 +60,7 @@ const Registration = () => {
                             {activeForm === 'signup' && 'Create Account'}
                             {activeForm === 'forget-password' && 'Reset Password'}
                         </h1>
-                        <p className="text-sm text-gray-500">
+                        <p className="text-sm text-neutral-500">
                             {activeForm === 'login' && 'Sign in to access your account'}
                             {activeForm === 'signup' && 'Join our community and start your journey'}
                             {activeForm === 'forget-password' && 'Enter your email to reset your password'}

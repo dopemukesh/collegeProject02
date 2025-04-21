@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import Registration from './pages/registration/Registration';
 import Home from './pages/home/Home';
+import Navbar from './components/layout/navbar/Navbar';
 
 const AppRoutes = () => {
     const [isAuthenticated, setIsAuthenticated] = useState(false);
@@ -30,6 +31,7 @@ const AppRoutes = () => {
 
     return (
         <Router>
+            <Navbar />
             <Routes>
                 <Route
                     path="/register"
