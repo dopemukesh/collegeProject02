@@ -25,8 +25,8 @@ const Home = () => {
 
     return (
         <Container>
-            <div className="min-h-screen p-6">
-                <div className="max-w-4xl mx-auto">
+            <div className="min-h-screen py-14">
+                <div className="max-w-4xl mx-auto px-6">
                     {/* Welcome Section */}
                     <div className="bg-white dark:bg-neutral-900 rounded-2xl p-8 shadow-lg border border-neutral-200 dark:border-neutral-800">
                         <div className="flex justify-between items-start">
@@ -38,12 +38,12 @@ const Home = () => {
                                     We're glad to have you here. Start exploring and enjoy your experience!
                                 </p>
                             </div>
-                            <Button01
+                            {/* <Button01
                                 rounded='full'
                                 size='sm'
                                 onClick={handleLogout} >
                                 Logout
-                            </Button01>
+                            </Button01> */}
                         </div>
                     </div>
 
